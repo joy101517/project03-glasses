@@ -1,0 +1,117 @@
+// base
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: $line-height;
+  font-family: $font-primary, $font-primary, 'PingFang TC', Semibold, 'Microsoft JhengHei', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @include pad {
+    max-width: 690px;
+  }
+
+  @include phone {
+    max-width: 345px;
+  }
+}
+
+.nav {
+  @include pad {
+    max-width: 690px;
+  }
+
+  @include phone {
+    max-width: 100%;
+  }
+}
+
+.wrap {
+  max-width: 66%;
+  margin: 0 auto;
+
+  @include phone {
+    max-width: 345px;
+  }
+}
+
+
+.subBanner {
+  height: 304px;
+  background: url(../images/img/qa.png) center/cover no-repeat;
+
+  @include phone {
+    height: 143px;
+  }
+
+  .container {
+    height: 100%;
+    align-items: flex-end;
+  }
+}
+
+.bannerTitle {
+  h2 {
+    margin-right: 24px;
+    font-size: $font-6xl;
+    line-height: $line-height-sm;
+
+    @include pad {
+      margin-right: 16px;
+      font-size: $font-5xl;
+    }
+
+    @include phone {
+      margin-right: 8px;
+      font-size: $font-2xl;
+    }
+  }
+
+  img {
+    width: 60px;
+
+    @include pad {
+      width: 48px;
+    }
+
+    @include phone {
+      width: 24px;
+    }
+  }
+}
+
+.title {
+  font-size: 48px;
+  line-height: 67px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include pad {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 32px;
+  }
+
+  @include phone {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 20px;
+  }
+}

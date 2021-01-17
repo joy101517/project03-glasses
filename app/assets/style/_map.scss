@@ -1,0 +1,48 @@
+// map
+.map {
+  padding: 16px 0 304px;
+
+  @include pad {
+    padding: 8px 0 104px;
+  }
+
+  @include phone {
+    padding: 8px 0 56px;
+  }
+}
+
+.mapShopCard {
+  width: 40%;
+  margin-right: 30px;
+
+  @include pad {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include phone {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .shopPhoto {
+    @include pad {
+      width: 47%;
+    }
+
+    @include phone {
+      width: 100%;
+    }
+  }
+}
+
+.mapImg {
+  width: 57%;
+
+  @include pad {
+    width: 100%;
+  }
+}

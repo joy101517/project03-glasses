@@ -1,0 +1,77 @@
+.bg-primary {
+  background-color: $color-primary;
+}
+
+.bg-secondary {
+  background-color: $color-primary-lighter;
+}
+
+.text-primary {
+  color: $color-primary-darker;
+}
+
+.text-primary-lighter {
+  color: $color-primary;
+}
+
+.text-light {
+  color: $color-light;
+}
+
+.text-lighter {
+  color: $color-lighter;
+}
+
+.text-secondary-lighter {
+  color: $color-secondary-lighter;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+.text-secondary-darker {
+  color: $color-secondary-darker;
+}
+
+.font-black {
+  font-weight: $font-black;
+}
+
+.font-bold {
+  font-weight: $font-bold;
+}
+
+.font-medium {
+  font-weight: $font-medium;
+}
+
+.font-regular {
+  font-weight: $font-regular;
+}
+
+/* all */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+
+.flex-jc-sbetween {
+  justify-content: space-between;
+}
+
+.flex-ai-center {
+  align-items: center;
+}

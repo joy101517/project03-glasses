@@ -1,0 +1,473 @@
+/* banner */
+.banner {
+  height: 840px;
+  background: url(../images/img/banner.png) center/cover no-repeat;
+
+  @include phone {
+    height: 394px;
+    background: url(../images/img/banner-sm.png) left/cover no-repeat;
+  }
+
+  .container {
+    height: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.topic {
+  font-size: $font-6xl;
+  line-height: $line-height-sm;
+  text-align: right;
+
+  @include pad {
+    font-size: $font-5xl;
+    line-height: $line-height;
+  }
+
+  @include phone {
+    font-size: $font-3xl;
+    line-height: $line-height-sm;
+  }
+
+  span {
+    font-size: $font-4xl;
+
+    @include pad {
+      font-size: $font-l;
+    }
+
+    @include phone {
+      font-size: $font-m;
+    }
+  }
+}
+
+
+/* service */
+.about {
+  padding: 64px 0 80px;
+
+  @include pad {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 32px 0 12px;
+  }
+}
+
+.service {
+  align-items: baseline;
+
+  li {
+    width: 18%;
+    margin: 0 24px;
+
+    @include pad {
+      width: 34%;
+    }
+
+    @include phone {
+      width: 69%;
+      margin: 0 auto;
+    }
+  }
+
+  img {
+    width: 100px;
+    margin-bottom: 40px;
+
+    @include pad {
+      width: 80px;
+      margin-bottom: 16px;
+    }
+
+    @include phone {
+      width: 80px;
+      margin-bottom: 16px;
+    }
+  }
+
+  h3 {
+    font-size: $font-xl;
+    line-height: $line-height-sm;
+    margin-bottom: 4px;
+
+    @include pad {
+      font-size: $font-l;
+      line-height: $line-height;
+      margin-bottom: 8px;
+    }
+
+    @include phone {
+      line-height: $line-height-sm;
+      margin-bottom: 8px;
+    }
+  }
+
+  p {
+    @include pad {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* product */
+.product {
+  padding: 64px 0 40px;
+
+  @include pad {
+    padding: 40px 0 32px;
+  }
+
+  @include phone {
+    padding: 32px 0 24px;
+  }
+}
+
+.category {
+  li {
+    margin-bottom: 32px;
+
+    @include pad {
+      margin-bottom: 8px;
+    }
+  }
+
+  a {
+    transition: .5s;
+
+    @include pad {
+      flex-direction: row;
+    }
+
+    @include phone {
+      width: 100%;
+      position: relative;
+      justify-content: center;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  img {
+    width: 60%;
+    margin-right: 30px;
+
+    @include pad {
+      width: 390px;
+    }
+
+    @include phone {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .icon {
+    @include pad {
+      width: 32px;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+}
+
+.categoryTitle {
+  @include phone {
+    position: absolute;
+  }
+
+  .icon {
+    width: 48px;
+    margin-right: 8px;
+  }
+
+  .iconWhite {
+    display: none;
+
+    @include phone {
+      display: block;
+      width: 32px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.categoryName {
+  font-style: italic;
+  font-size: $font-5xl;
+  line-height: $line-height-sm;
+
+  @include pad {
+    font-size: $font-2xl;
+  }
+
+  @include phone {
+    color: #fff;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+
+  img {
+    margin-right: 0;
+
+    @include pad {
+      margin-right: 30px;
+    }
+
+    @include phone {
+      margin-right: 0px;
+    }
+  }
+
+  .icon {
+    margin-right: 8px;
+  }
+
+  .categoryName {
+    margin-right: 30px;
+
+    @include pad {
+      margin-right: 0px;
+    }
+  }
+}
+
+/* collaboration */
+.collaboration {
+  background: url(../images/img/bg.png) center/cover no-repeat;
+  padding: 64px 0 80px;
+
+  @include pad {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 32px 16;
+  }
+}
+
+.series {
+  li {
+    width: 48%;
+    position: relative;
+
+    @include phone {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px rgba(255, 3, 3, 0.8);
+    }
+  }
+
+
+  a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .5s;
+  }
+
+  h3 {
+    font-size: $font-7xl;
+    line-height: $line-height-sm;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+    @include pad {
+      font-size: $font-3xl;
+    }
+  }
+}
+
+/* review */
+.review {
+  padding: 64px 0;
+
+  @include pad {
+    padding: 40px 0 11px;
+  }
+
+  @include phone {
+    padding: 32px 0 16px;
+  }
+}
+
+.reviewList li {
+  width: 23%;
+
+  @include pad {
+    width: 47%;
+    margin-bottom: 28px;
+  }
+
+  @include phone {
+    width: 93%;
+    margin-bottom: 0 auto 16px;
+  }
+}
+
+.reviewText {
+  padding: 14px 16px 5px;
+  border: 1px solid #DEE2E6;
+
+  @include pad {
+    padding: 16px;
+    border: 1px solid #DEE2E6;
+  }
+
+  h4 {
+    font-size: $font-s;
+    line-height: $line-height-sm;
+    margin-bottom: 7px;
+
+    @include pad {
+      margin-bottom: 16px;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+
+    @include pad {
+      margin-bottom: 16px;
+    }
+  }
+
+  .updateTime {
+    font-size: $font-s;
+    line-height: $line-height-sm;
+
+    @include pad {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+
+/* contact */
+.contact {
+  padding: 64px 0 64px;
+
+  @include pad {
+    padding: 40px 0;
+  }
+
+  @include phone {
+    padding: 32px 0;
+  }
+
+  .title {
+    margin-bottom: 24px;
+
+    @include pad {
+      margin-bottom: 16px;
+    }
+  }
+
+  p {
+    font-size: $font-l;
+    margin-bottom: 20px;
+
+    @include pad {
+      font-size: $font-m;
+      margin-bottom: 12px;
+    }
+
+    @include phone {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+
+  @include pad {
+    margin-bottom: 8px;
+  }
+
+  label {
+    line-height: $line-height-sm;
+
+    @include pad {
+      font-size: $font-s;
+    }
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 16px;
+
+    @include pad {
+      padding: 12px;
+    }
+
+    @include phone {
+      padding-top: 10px;
+      padding-left: 12px;
+    }
+  }
+}
+
+.checkboxGroup {
+  margin-bottom: 42px;
+
+  @include pad {
+    margin-bottom: 20px;
+  }
+
+  @include phone {
+    margin-bottom: 24px;
+  }
+
+  input {
+    cursor: pointer;
+  }
+}
+
+.submit {
+  display: block;
+  line-height: $line-height-sm;
+  padding: 16px 143px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .5s;
+
+  &:hover {
+    background-color: $color-primary-darker;
+  }
+
+
+  @include pad {
+    font-size: $font-s;
+    padding: 8px 78px;
+  }
+
+  @include phone {
+    line-height: $line-height;
+    padding: 8px 54.5px;
+  }
+}

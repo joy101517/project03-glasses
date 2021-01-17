@@ -1,10 +1,36 @@
----
-title: Shop
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Shop
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="header bg-primary">
+    <nav class="nav d-flex flex-jc-sbetween flex-ai-center">
+      <h1 class="logo">
+        <a href="index.html">LOGO</a>
+      </h1>
+      <ul class="menu d-flex flex-jc-sbetween flex-wrap">
+        <li><a href="#" class="text-lighter">系列鏡框</a></li>
+        <li><a href="shop.html" class="text-lighter">門市據點</a></li>
+        <li><a href="#" class="text-lighter">部落格</a></li>
+        <li><a href="faq.html" class="text-lighter">常見問題</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
 
 <section class="subBanner">
   <div class="container d-flex">
@@ -132,3 +158,51 @@ current: index
     </li>
   </ul>
 </div>
+
+    <!-- footer -->
+    <footer class="footer bg-primary">
+      <div class="container">
+        <div class="info">
+          <div class="footerNav d-flex flex-jc-sbetween flex-ai-center">
+            <ul class="menu d-flex">
+              <li><a href="index.html" class="text-lighter">首頁</a></li>
+              <li><a href="#" class="text-lighter">系列鏡框</a></li>
+              <li><a href="shop.html" class="text-lighter">門市據點</a></li>
+              <li><a href="#" class="text-lighter">部落格</a></li>
+              <li><a href="faq.html" class="text-lighter">常見問題</a></li>
+            </ul>
+            <ul class="sns d-flex">
+              <li><a href="#" class="fb-logo"></a></li>
+              <li><a href="#" class="ig-logo"></a></li>
+              <li><a href="#" class="line-logo"></a></li>
+            </ul>
+          </div>
+          <ul class="contactMethod">
+            <li class="d-flex flex-ai-center">
+              <img src="./assets/images/icon/icon-phone.svg" alt="" class="contactIcon phoneIcon">
+              <a href="tel" class="text-lighter">0800-000-000</a>
+            </li>
+            <li class="d-flex flex-ai-center">
+              <img src="./assets/images/icon/icon-mail.svg" alt="" class="contactIcon">
+              <a href="mailto" class="text-lighter">glasses@business.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="infoFooter d-flex flex-jc-sbetween flex-ai-center">
+          <div class="copyright d-flex flex-ai-center">
+            <h2 class="logo"><a href="index.html"">LOGO</a></h2>
+          <p class=" text-lighter">Copyright © 2020 Glasses.All rights reserved.</p>
+          </div>
+          <ul class="otherInfo d-flex">
+            <li><a href="#" class="text-lighter">隱私權政策</a></li>
+            <li><a href="#" class="text-lighter">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
